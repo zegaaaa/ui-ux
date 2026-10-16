@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Praktikum Mandiri</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      color: #333;
+    }
+
+    /* Navigasi */
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      border: 1px solid #000;
+      padding: 10px;
+      max-width: 600px;
+      margin: 0 auto 30px auto;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    nav span {
+      color: #000;
+    }
+
+    /* Kontainer Utama */
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* Kotak Placeholder Gambar */
+    .image-placeholder {
+      width: 250px;
+      height: 250px;
+      border: 2px solid #000;
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    .image-placeholder::before,
+    .image-placeholder::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-top: 1px solid #000;
+    }
+
+    .image-placeholder::before {
+      transform: rotate(45deg);
+      transform-origin: top left;
+      width: 141.4%;
+    }
+
+    .image-placeholder::after {
+      transform: rotate(-45deg);
+      transform-origin: top right;
+      left: auto;
+      right: 0;
+      width: 141.4%;
+    }
+
+    /* Formulir & Detail */
+    .form-container {
+      flex-grow: 1;
+    }
+
+    .form-row {
+      display: flex;
+      margin-bottom: 12px;
+      align-items: flex-start;
+    }
+
+    .label {
+      width: 160px;
+      font-weight: normal;
+    }
+
+    .colon {
+      margin-right: 15px;
+    }
+
+    .value {
+      flex: 1;
+    }
+
+    /* Input & Select */
+    input[type="text"],
+    select {
+      padding: 6px 10px;
+      border: 1px solid #333;
+      border-radius: 4px;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+
+    .input-small {
+      width: 200px;
+    }
+
+    .input-medium {
+      width: 300px;
+    }
+
+    .input-large {
+      width: 100%;
+      max-width: 400px;
+    }
+
+    /* Checkbox */
+    .checkbox-group {
+      margin-left: 175px;
+      margin-bottom: 15px;
+    }
+
+    .checkbox-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+
+    /* Tombol Bayar */
+    .btn-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .btn-pay {
+      background-color: #0b9e38;
+      color: #fff;
+      border: 2px solid #000;
+      padding: 10px 24px;
+      font-weight: bold;
+      font-size: 15px;
+      cursor: pointer;
+      box-shadow: 2px 2px 0px #000;
+    }
+
+    .btn-pay:hover {
+      background-color: #09832e;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menu Navigasi -->
+  <nav>
+    <a href="#">Home</a>
+    <span>|</span>
+    <a href="#">Register</a>
+    <span>|</span>
+    <a href="#">Policy</a>
+    <span>|</span>
+    <a href="#">About</a>
+  </nav>
+
+  <!-- Konten Utama -->
+  <div class="container">
+    <!-- Gambar Placeholder (Kotak Silang) -->
+    <div class="image-placeholder"></div>
+
+    <!-- Bagian Form & Informasi -->
+    <div class="form-container">
+      <form action="#" method="POST">
+        
+        <!-- Title -->
+        <div class="form-row">
+          <span class="label">Title Here</span>
+          <span class="colon">:</span>
+          <span class="value">MacBook Air £800</span>
+        </div>
+
+        <!-- Description -->
+        <div class="form-row">
+          <span class="label">Description</span>
+          <span class="colon">:</span>
+          <div class="value">
+            <div>Year : 2026</div>
+            <div>Model : MacBook Air</div>
+            <div>Condition : Mint</div>
+          </div>
+        </div>
+
+        <!-- Total Amount -->
+        <div class="form-row">
+          <span class="label">Total Amount</span>
+          <span class="colon">:</span>
+          <span class="value">20.000.000</span>
+        </div>
+
+        <!-- Pay to -->
+        <div class="form-row">
+          <span class="label">Pay to</span>
+          <span class="colon">:</span>
+          <span class="value">0822 9950 9103</span>
+        </div>
+
+        <!-- Payment Type -->
+        <div class="form-row">
+          <label class="label" for="payment-type">Payment Type</label>
+          <span class="colon">:</span>
+          <div class="value">
+            <select id="payment-type" name="payment_type" class="input-small">
+              <option value="visa_debit" selected>Visa Debit</option>
+              <option value="mastercard">Mastercard</option>
+              <option value="credit_card">Credit Card</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Account Holder -->
+        <div class="form-row">
+          <label class="label" for="account-holder">Account Holder</label>
+          <span class="colon">:</span>
+          <div class="value">
+            <input type="text" id="account-holder" name="account_holder" value="Name Here" class="input-medium">
+          </div>
+        </div>
+
+        <!-- Account No -->
+        <div class="form-row">
+          <label class="label" for="account-no">Account No</label>
+          <span class="colon">:</span>
+          <div class="value">
+            <input type="text" id="account-no" name="account_no" value="0822 9950 9103" class="input-large">
+          </div>
+        </div>
+
+        <!-- Checkbox Options -->
+        <div class="checkbox-group">
+          <label class="checkbox-item">
+            <input type="checkbox" name="send_mobile" checked>
+            Send to Mobile Phone
+          </label>
+          <label class="checkbox-item">
+            <input type="checkbox" name="email_copy" checked>
+            Email me copy of transaction
+          </label>
+        </div>
+
+        <!-- Send to Mobile Phone -->
+        <div class="form-row">
+          <label class="label" for="mobile-phone">Send to Mobile Phone</label>
+          <span class="colon">:</span>
+          <div class="value">
+            <input type="text" id="mobile-phone" name="mobile_phone" value="0822 9950 9103" class="input-large">
+          </div>
+        </div>
+
+        <!-- Send to Email -->
+        <div class="form-row">
+          <label class="label" for="email">Send to Email</label>
+          <span class="colon">:</span>
+          <div class="value">
+            <input type="text" id="email" name="email" value="damaipasrah809@gmail.com" class="input-large">
+          </div>
+        </div>
+
+        <!-- Tombol Submit / Bayar -->
+        <div class="btn-container">
+          <button type="submit" class="btn-pay">Pay using QuidLink</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
