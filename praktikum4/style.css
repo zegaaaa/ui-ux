@@ -1,0 +1,203 @@
+body {
+    background-color: #f5f5dc;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    margin: 0;
+    padding: 10px;
+}
+
+#header {
+    background-color: #dfb985;
+    padding: 15px 10px;
+    text-align: center;
+}
+
+#header h1 {
+    color: blue;
+    font-size: 28px;
+    margin: 5px 0 15px;
+}
+
+blockquote {
+    background-color: #ffcc00;
+    border: 1px dotted #8b6b00;
+    padding: 5px;
+    margin: 0 3%;
+    font-size: 14px;
+    line-height: 1.35;
+}
+
+#soekarno {
+    display: inline-block;
+    margin-top: 3px;
+}
+
+body > div:nth-of-type(2) {
+    text-align: center;
+    margin: 12px 0;
+}
+
+body > div:nth-of-type(2) ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+body > div:nth-of-type(2) li {
+    display: inline;
+    margin: 0 3px;
+}
+
+body > div:nth-of-type(2) a {
+    color: #51416b;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.gambar {
+    text-align: center;
+    margin: 10px 0 5px;
+}
+
+.gambar img {
+    width: 20%;
+    max-width: 230px;
+    height: 160px;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+.isi {
+    margin: 5px;
+}
+
+.isi p {
+    font-size: 14px;
+    line-height: 1.35;
+    text-align: justify;
+    margin: 12px 0;
+}
+
+.isi p:first-child::first-letter {
+    color: blue;
+    font-size: 48px;
+    float: left;
+    line-height: 0.85;
+    padding-right: 2px;
+}
+
+.jawa {
+    font-weight: bold;
+}
+
+#profil,
+#beternak {
+    margin: 12px 5px;
+}
+
+#profil h3,
+#beternak h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+#profil ul,
+#beternak ol {
+    padding-left: 25px;
+}
+
+#profil li,
+#beternak li {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 8px;
+}
+
+/* Judul setiap langkah budidaya */
+#beternak h4 {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+/* Paragraf budidaya */
+#beternak p {
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+/* Galeri koleksi burung */
+.koleksi {
+    background-color: black;
+    padding: 8px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.koleksi img {
+    width: 23%;
+    height: 120px;
+    object-fit: cover;
+    margin: 2px;
+    vertical-align: middle;
+}
+
+/* Bagian promosi */
+.promo {
+    text-align: center;
+    color: red;
+}
+
+.promo h2 {
+    font-size: 28px;
+}
+
+.promo h3 {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* Nomor WhatsApp */
+#Wa {
+    font-weight: bold;
+}
+
+/* Judul e-commerce */
+.promo h4 {
+    font-size: 16px;
+}
+
+/* Daftar e-commerce */
+.promo ol {
+    list-style-position: inside;
+    padding: 0;
+}
+
+.promo li {
+    margin: 5px 0;
+}
+
+.promo a {
+    color: blue;
+}
+
+/* Tampilan layar kecil */
+@media (max-width: 650px) {
+    #header h1 {
+        font-size: 22px;
+    }
+
+    .gambar img {
+        width: 42%;
+        height: 130px;
+    }
+
+    .koleksi img {
+        width: 45%;
+        height: 110px;
+    }
+
+    blockquote {
+        font-size: 12px;
+    }
+}
