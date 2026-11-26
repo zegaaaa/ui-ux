@@ -1,0 +1,123 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Bingkai browser */
+.browser {
+    width: 494px;
+    height: 338px;
+    border: 2px solid #777;
+    border-radius: 5px 5px 0 0;
+    background-color: white;
+}
+
+/* Judul browser */
+.browser-title {
+    height: 22px;
+    background-color: #e8e8e8;
+    border-bottom: 1px solid #777;
+    text-align: center;
+    font-size: 10px;
+    padding-top: 4px;
+    color: #333;
+}
+
+/* Toolbar browser */
+.browser-toolbar {
+    height: 32px;
+    background-color: #e8e8e8;
+    border-bottom: 2px solid #777;
+
+    display: flex;
+    align-items: center;
+
+    padding: 3px 6px;
+    gap: 8px;
+}
+
+/* Tombol browser */
+.browser-buttons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #333;
+}
+
+.browser-buttons .refresh {
+    font-size: 22px;
+}
+
+/* Address bar */
+.address {
+    flex: 1;
+    height: 23px;
+
+    border: 1px solid #777;
+    background-color: white;
+
+    color: #1681d5;
+    font-size: 11px;
+
+    padding: 5px 8px;
+}
+
+/* Area isi halaman */
+.web-content {
+    padding: 9px 12px 13px;
+}
+
+/* Kotak hijau bagian atas */
+.green-box {
+    width: 100%;
+    height: 53px;
+
+    background-color: #a8d995;
+    border: 1px solid #555;
+
+    margin-bottom: 19px;
+}
+
+/* Baris kotak */
+.content-row {
+    display: flex;
+    gap: 21px;
+
+    height: 93px;
+    margin-bottom: 15px;
+}
+
+/* Kotak kuning */
+.yellow-box {
+    width: 92px;
+    flex-shrink: 0;
+
+    background-color: #f4ed43;
+    border: 1px solid #555;
+}
+
+/* Kotak oranye dan biru */
+.orange-box,
+.blue-box {
+    flex: 1;
+    border: 1px solid #555;
+}
+
+/* Warna oranye */
+.orange-box {
+    background-color: #ff5b20;
+}
+
+/* Warna biru */
+.blue-box {
+    background-color: #45cbe8;
+}

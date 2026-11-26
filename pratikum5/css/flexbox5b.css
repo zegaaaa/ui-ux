@@ -1,0 +1,106 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+
+    /* Layout berada di tengah halaman */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 600px;
+    height: 330px;
+    padding: 16px;
+
+    background-color: lightpink;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+header {
+    height: 36px;
+    background-color: #83c9c1;
+    color: white;
+    text-align: center;
+    padding: 7px;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    gap: 14px;
+    min-height: 0;
+}
+
+aside {
+    width: 150px;
+    background-color: #63b4b3;
+    color: white;
+    font-size: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+article {
+    flex: 1;
+    background-color: #f7797d;
+    color: white;
+    font-size: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    padding: 16px 12px 10px;
+}
+
+/* Kotak Image */
+.images {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.image-box {
+    flex: 1;
+    height: 90px;
+    background-color: #dedede;
+    color: white;
+    font-size: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer {
+    height: 36px;
+    background-color: #83c9c1;
+    color: white;
+    text-align: center;
+    padding: 7px;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+@media (max-width: 640px) {
+    .container {
+        width: 95%;
+        height: 330px;
+    }
+}
