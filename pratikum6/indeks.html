@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Praktikum JavaScript</title>
+</head>
+<body>
+
+    <h2>Praktikum Basic JavaScript</h2>
+    <p>Lihat hasil melalui Console (F12).</p>
+
+    <script>
+
+        // 2. Output, Variabel, dan Tipe Data
+
+        {
+            const nama = "Alya";
+            let umur = 19;
+            let nilai = 85;
+            let aktif = true;
+
+            console.log("Nama:", nama);
+            console.log("Umur:", umur);
+            console.log("Nilai:", nilai);
+            console.log("Status aktif:", aktif);
+            console.log("Tipe nilai:", typeof nilai);
+        }
+
+
+        // 3. Operator dan Perhitungan Sederhana
+
+        {
+            const tugas = 80;
+            const uts = 75;
+            const uas = 90;
+
+            const akhir = tugas * 0.30 + uts * 0.30 + uas * 0.40;
+
+            console.log("Nilai akhir:", akhir);
+            console.log("Lulus:", akhir >= 60);
+        }
+
+
+        // 4. Percabangan if, else if, else
+
+        {
+            const nilai = 78;
+            let kategori;
+
+            if (nilai >= 85) {
+                kategori = "A";
+            } else if (nilai >= 70) {
+                kategori = "B";
+            } else if (nilai >= 60) {
+                kategori = "C";
+            } else {
+                kategori = "D";
+            }
+
+            console.log("Nilai:", nilai);
+            console.log("Kategori:", kategori);
+        }
+
+
+        // 5. Perulangan dan Fungsi Dasar
+
+        {
+            function hitungDiskon(harga, persen) {
+                return harga - (harga * persen / 100);
+            }
+
+            for (let i = 1; i <= 3; i++) {
+                const harga = i * 10000;
+                const bayar = hitungDiskon(harga, 10);
+
+                console.log("Barang", i, "Harga:", harga, "Bayar:", bayar);
+            }
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Praktikum JavaScript</title>
+</head>
+<body>
+
+    <h2>Praktikum Basic JavaScript</h2>
+    <p>Output wajib: Nama mahasiswa, nilai akhir, dan status kelulusan</p>
+
+<script>
+
+    const namaMahasiswa = "Damai Pasrah Zega";
+
+    const nilaiTugas = 80;
+    const nilaiUTS = 70;
+    const nilaiUAS = 90;
+
+    const nilaiAkhir =
+        nilaiTugas * 0.30 +
+        nilaiUTS * 0.30 +
+        nilaiUAS * 0.40;
+
+    let statusKelulusan;
+
+    if (nilaiAkhir >= 60) {
+        statusKelulusan = "LULUS";
+    } else {
+        statusKelulusan = "TIDAK LULUS";
+    }
+
+    console.log("Nama mahasiswa:", namaMahasiswa);
+    console.log("Nilai akhir:", nilaiAkhir);
+    console.log("Status kelulusan:", statusKelulusan);
+</script>
