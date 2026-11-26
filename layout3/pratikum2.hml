@@ -1,0 +1,26 @@
+<!DOCTYPE html><html>
+<head>
+    <title>Praktikum 2</title>
+</head>
+<body>
+
+    <h1>Praktikum 2</h1>
+
+    <h2>Perkenalan Diri</h2>
+
+    <p>
+        Halo, nama saya [Nama Kamu].
+        Saya sedang belajar membuat halaman web
+        menggunakan HTML.
+    </p>
+
+    <h3>Hobi Saya</h3>
+
+    <ul>
+        <li>Membaca</li>
+        <li>Mendengarkan musik</li>
+        <li>Belajar desain</li>
+    </ul>
+
+</body>
+</html>

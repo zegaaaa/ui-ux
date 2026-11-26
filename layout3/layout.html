@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Layout HTML5</title>
+
+    <style>
+        /* Mengatur seluruh elemen */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 15px;
+        }
+
+        /* HEADER */
+        header {
+            background-color: #f5d84e;
+            border: 2px solid black;
+            padding: 15px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+
+            min-height: 100px;
+        }
+
+        header img {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+        }
+
+        header h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        /* NAV */
+        nav {
+            background-color: #8de34b;
+            border: 2px solid black;
+            padding: 10px;
+            margin-top: 10px;
+
+            display: flex;
+            gap: 10px;
+        }
+
+        nav a {
+            background-color: white;
+            color: black;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 1px solid black;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #f5d84e;
+        }
+
+        /* PEMBUNGKUS ARTICLE DAN ASIDE */
+        .content {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: stretch;
+            gap: 10px;
+
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        /* ARTICLE */
+        article {
+            flex: 1;
+            min-width: 0;
+
+            background-color: #f7b64a;
+            border: 2px solid black;
+            padding: 15px;
+        }
+
+        article h2 {
+            margin-top: 0;
+        }
+
+        article p {
+            line-height: 1.5;
+        }
+
+        /* SECTION */
+        section {
+            background-color: #ffe27a;
+            border: 1px solid black;
+            padding: 15px;
+            margin-top: 10px;
+
+            height: auto;
+            overflow-wrap: break-word;
+        }
+
+        section h3 {
+            margin-top: 0;
+        }
+
+        section p {
+            margin-bottom: 0;
+        }
+
+        /* ASIDE */
+        aside {
+            flex: 0 0 26%;
+            min-width: 0;
+
+            background-color: #00d6c9;
+            border: 2px solid black;
+            padding: 15px;
+
+            overflow-wrap: break-word;
+        }
+
+        aside h2 {
+            margin-top: 0;
+        }
+
+        aside p {
+            line-height: 1.5;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #f5d84e;
+            border: 2px solid black;
+            padding: 15px;
+            margin-top: 10px;
+
+            text-align: center;
+        }
+
+        /* Tampilan untuk layar kecil */
+        @media screen and (max-width: 600px) {
+            .content {
+                flex-direction: column;
+            }
+
+            aside {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <img src="asset/logo-sttnf.jpg" alt="Logo STT NF">
+
+        <h1>Website Praktikum UI/UX</h1>
+    </header>
+
+    <!-- NAV -->
+    <nav>
+        <a href="praktikum1.html">Praktikum 1</a>
+
+        <a href="praktikum2.html">Praktikum 2</a>
+    </nav>
+
+    <!-- ARTICLE DAN ASIDE -->
+    <div class="content">
+
+        <!-- ARTICLE -->
+        <article>
+
+            <h2>Artikel: Pengenalan HTML5</h2>
+
+            <p>
+                HTML5 merupakan versi HTML yang digunakan
+                untuk membuat dan menyusun struktur
+                halaman website.
+            </p>
+
+            <section>
+                <h3>Pengertian HTML</h3>
+
+                <p>
+                    HTML adalah bahasa markup yang digunakan
+                    untuk menampilkan teks, gambar, dan
+                    berbagai konten pada halaman web.
+                </p>
+            </section>
+
+            <section>
+                <h3>Fungsi HTML5</h3>
+
+                <p>
+                    HTML5 membantu menyusun halaman web
+                    dengan elemen yang lebih terstruktur,
+                    seperti header, nav, article, section,
+                    aside, dan footer.
+                </p>
+            </section>
+
+            <section>
+                <h3>Kesimpulan</h3>
+
+                <p>
+                    Dengan HTML5, pembuatan halaman website
+                    menjadi lebih terorganisir dan
+                    mudah dipahami.
+                </p>
+            </section>
+
+        </article>
+
+        <!-- ASIDE -->
+        <aside>
+
+            <h2>Informasi</h2>
+
+            <h3>Elemen HTML5</h3>
+
+            <ul>
+                <li>Header</li>
+                <li>Nav</li>
+                <li>Article</li>
+                <li>Section</li>
+                <li>Aside</li>
+                <li>Footer</li>
+            </ul>
+
+            <h3>Informasi Tambahan</h3>
+
+            <p>
+                HTML5 digunakan untuk membangun
+                struktur halaman website agar
+                lebih terorganisir.
+            </p>
+
+        </aside>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Praktikum UI/UX - HTML5 Layout</p>
+    </footer>
+
+</body>
+</html>
